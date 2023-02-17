@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<style>
+    body {
+      background-color: #141414;
+      font-family: 'Open Sans', sans-serif;
+    }
+    #buttons {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    video {
+      width: 1249px;
+      height: 340px;
+      border: 1px solid #222;
+      border-radius: 4px;
+      background-color: #000;
+      padding: 20px;
+      position: center;
+      display: block;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    button {
+      background-color: #e50914;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 16px;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff0a16;
+    }
+
+    button:active {
+      background-color: #d70711;
+    }
+
+    #button-container {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #data {
+        padding: 5px;
+        border-style: groove;
+        background-color: gray;
+        width: 200px;
+    }
+    .metadata-container {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .metadata-container strong {
+      margin-right: 8px;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .metadata-container span {
+      color: #e50914;
+      font-size: 16px;
+    }
+  </style>
+
+<!--End of CSS-->
+
+<!--Start of HTML-->
+<html>
+  <head>
+    <title>Dash.js Video Player</title>
+    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+  </head>
+  <body>
+    <!--adds video element-->
+    <video id="videoPlayer" controls></video>
+    <!--adds button elements-->
+    <div id="buttons">
+    <button onclick="DisableABR()">Low Quality</button>
+    <button onclick="EnableABR()">High Quality</button>
+    </div>
+
+    <div id="data">
+      <strong>Buffer level:</strong>
+      <span id="bufferLevel">0</span> seconds
+
+      <strong>Throughput:</strong>
+      <span id="throughput">0</span> kbps
+
+      <strong>Bitrate:</strong>
+      <span id="bitrate">0</span> kbps
+    </div>
+<!--End of HTML-->
+
+<!--Begining of JS-->
+    <script>
+        //initialize 3 important variables to play the video.
+         var video = document.querySelector('video');
+         var player = dashjs.MediaPlayer().create();
+         var url = "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd";
+
+        //initialize 3 important variables for keeping track of metadata.
+        var bufferLevelElement = document.getElementById('bufferLevel');
+        var throughputElement = document.getElementById('throughput');
+        var bitrateElement = document.getElementById('bitrate');
+
+      function DisableABR()
+        {
+            //turns off ABR
+            player.updateSettings({'streaming': {'abr': {'useDefaultABRRules': false}}});
+            //relaunches the player.
+            player.initialize(document.querySelector("video"), url, true);
+        };
+        function EnableABR()
+        {
+            //turns on ABR
+            player.updateSettings({'streaming': {'abr': {'useDefaultABRRules': true}}});
+            //relaunches the player.
+            player.initialize(document.querySelector("video"), url, true);
+        };
+
+        setInterval(function() {
+        var bufferLevel = player.getBufferLength('video');
+        bufferLevelElement.innerHTML = bufferLevel.toFixed(2);
+
+        var throughput = player.getAverageThroughput('video');
+        throughputElement.innerHTML = (throughput / 1000).toFixed(2);
+
+        var bitrate = player.getQualityFor('video');
+        bitrateElement.innerHTML = (bitrate).toFixed(2);
+      }, 100);
+    </script>
+<!--End of JS-->
+
+
+  </body>
+</html>
