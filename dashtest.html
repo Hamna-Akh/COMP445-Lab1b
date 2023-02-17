@@ -6,7 +6,7 @@
     }
     #buttons {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -54,23 +54,19 @@
         border-style: groove;
         background-color: gray;
         width: 250px;
+        
     }
-    .metadata-container {
-      margin-top: 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    #staple{
+      padding-top: 30px;
     }
-
-    .metadata-container strong {
-      margin-right: 8px;
-      color: #fff;
-      font-size: 16px;
+    #title{
+      background-color: gray;
+      padding: 20px;
+      font-size: larger;
     }
-
-    .metadata-container span {
-      color: #e50914;
-      font-size: 16px;
+    span{
+      padding: 10px;
+     
     }
   </style>
 
@@ -83,6 +79,11 @@
     <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
   </head>
   <body>
+    <div id="title">
+    <span style = "text-decoration: underline; font-weight: bold; font-size: x-large;">Concordia DASH.js simulation</span>
+    <span>by Antonio Reda and Hamna Akhter</span>
+  </div>
+
     <!--adds video element-->
     <video id="videoPlayer" controls></video>
     <!--adds button elements-->
