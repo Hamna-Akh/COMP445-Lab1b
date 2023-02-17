@@ -1,111 +1,42 @@
 <!DOCTYPE html>
-<style>
-    body {
-      background-color: #141414;
-      font-family: 'Open Sans', sans-serif;
-    }
-    #buttons {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-    video {
-      width: 1249px;
-      height: 340px;
-      border: 1px solid #222;
-      border-radius: 4px;
-      background-color: #000;
-      padding: 20px;
-      position: center;
-      display: block;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    button {
-      background-color: #e50914;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      padding: 8px 16px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-right: 16px;
-      transition: all 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #ff0a16;
-    }
-
-    button:active {
-      background-color: #d70711;
-    }
-
-    #button-container {
-      margin-top: 16px;
-      display: flex;
-      justify-content: center;
-    }
-
-    #data {
-        padding: 5px;
-        border-style: groove;
-        background-color: gray;
-        width: 250px;
-        
-    }
-    #staple{
-      padding-top: 30px;
-    }
-    #title{
-      background-color: gray;
-      padding: 20px;
-      font-size: larger;
-    }
-    span{
-      padding: 10px;
-     
-    }
-  </style>
-
-<!--End of CSS-->
-
 <!--Start of HTML-->
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <title>Dash.js Video Player</title>
     <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
   </head>
   <body>
     <div id="title">
-    <span style = "text-decoration: underline; font-weight: bold; font-size: x-large;">Concordia DASH.js simulation</span>
-    <span>by Antonio Reda and Hamna Akhter</span>
-  </div>
+      <span style = "text-decoration: underline; font-weight: bold; font-size: x-large;">Concordia DASH.js simulation</span>
+      <span>by Antonio Reda and Hamna Akhter</span>
+    </div>
 
     <!--adds video element-->
     <video id="videoPlayer" controls></video>
     <!--adds button elements-->
     <div id="buttons">
-    <button onclick="DisableABR()">Low Quality</button>
-    <button onclick="EnableABR()">High Quality</button>
+      <button onclick="DisableABR()">Low Quality</button>
+      <button onclick="EnableABR()">High Quality</button>
+      <button onclick="enableDynamicABR()">Enable Dynamic ABR</button>
+      <button onclick="enableBOLATABR()">Enable BOLA ABR</button>
+      <button onclick="enableThroughputABR()">Enable Throughput ABR</button>
     </div>
 
     <div id="data">
       <div id="staple">
-      <strong>Buffer level:</strong>
-      <span id="bufferLevel">0</span> seconds
+        <strong>Buffer level:</strong>
+        <span id="bufferLevel">0</span> seconds
       </div>
 
       <div id="staple">
-      <strong>Throughput:</strong>
-      <span id="throughput">0</span> kbps
+        <strong>Throughput:</strong>
+        <span id="throughput">0</span> kbps
       </div>
 
       <div id="staple">
-      <strong>Bitrate:</strong>
-      <span id="bitrate">0</span> kbps
+        <strong>Bitrate:</strong>
+        <span id="bitrate">0</span> kbps
     </div>
     </div>
 <!--End of HTML-->
@@ -136,6 +67,30 @@
             //relaunches the player.
             player.initialize(document.querySelector("video"), url, true);
         };
+        function enableDynamicABR() {
+            // Set ABR to dynamic: A dynamic algorithm that is based on buffer occupancy and current network throughput. It is the default ABR strategy in dash.js.
+            player.updateSettings({'streaming': {'abr': {'ABRStrategy': 'dynamic'}}});
+            //relaunches the player.
+            player.initialize(document.querySelector("video"), url, true);
+            //double checking abr strategy in console, can delete later
+            console.log("ABR strategy: " + player.getSettings().streaming.abr.ABRStrategy);
+        }
+        function enableBOLATABR() {
+            // Set ABR to BOLA: A bitrate selection algorithm that uses a moving window of throughput estimates to select the optimal bitrate for playback.
+            player.updateSettings({'streaming': {'abr': {'ABRStrategy': 'bola'}}});
+            //relaunches the player.
+            player.initialize(document.querySelector("video"), url, true);
+            //double checking abr strategy in console, can delete later
+            console.log("ABR strategy: " + player.getSettings().streaming.abr.ABRStrategy);
+        }
+        function enableThroughputABR() {
+            // Set ABR to throughput-based:  A simple algorithm that selects the bitrate based on the current network throughput.
+            player.updateSettings({'streaming': {'abr': {'ABRStrategy': 'throughput'}}});
+            //relaunches the player.
+            player.initialize(document.querySelector("video"), url, true);
+            //double checking abr strategy in console, can delete later
+            console.log("ABR strategy: " + player.getSettings().streaming.abr.ABRStrategy);
+        }
 
         setInterval(function() {
         var bufferLevel = player.getBufferLength('video');
