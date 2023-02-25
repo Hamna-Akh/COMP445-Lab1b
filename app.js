@@ -7,6 +7,59 @@ player.on(dashjs.MediaPlayer.events["PLAYBACK_ENDED"], function () {
   clearInterval(bitrateCalculator);
 });
 
+        // player.updateSettings({
+        //     streaming: {
+        //         abr: {
+        //             useDefaultABRRules: true,
+        //             ABRStrategy: 'abrDynamic',
+        //             additionalAbrRules: {
+        //                 insufficientBufferRule: true,
+        //                 switchHistoryRule: false,
+        //                 droppedFramesRule: false,
+        //                 abandonRequestsRule: false
+        //             }
+        //         }
+        //     }
+        // });
+
+
+    function disableABR(){
+        player.updateSettings({
+            streaming: {
+                abr: {
+                    useDefaultABRRules: false,
+                    additionalAbrRules: {
+                        insufficientBufferRule: true,
+                        switchHistoryRule: false,
+                        droppedFramesRule: false,
+                        abandonRequestsRule: false
+                    }
+                }
+            }
+        });
+        
+        player.initialize(document.querySelector("#videoPlayer"), url, true);
+    }
+
+    function enableABR(){
+        player.updateSettings({
+            streaming: {
+                abr: {
+                    useDefaultABRRules: true,
+                    additionalAbrRules: {
+                        insufficientBufferRule: true,
+                        switchHistoryRule: false,
+                        droppedFramesRule: false,
+                        abandonRequestsRule: false
+                    }
+                }
+            }
+        });
+        
+        player.initialize(document.querySelector("#videoPlayer"), url, true);
+    }
+
+    function enableDynamicABR(){
         player.updateSettings({
             streaming: {
                 abr: {
@@ -21,131 +74,83 @@ player.on(dashjs.MediaPlayer.events["PLAYBACK_ENDED"], function () {
                 }
             }
         });
-
-
-    // function disableABR(){
-    //     player.updateSettings({
-    //         streaming: {
-    //             abr: {
-    //                 useDefaultABRRules: false,
-    //                 additionalAbrRules: {
-    //                     insufficientBufferRule: true,
-    //                     switchHistoryRule: false,
-    //                     droppedFramesRule: false,
-    //                     abandonRequestsRule: false
-    //                 }
-    //             }
-    //         }
-    //     });
-    //     relaunchPlayer();
-    // }
-
-    // function enableABR(){
-    //     player.updateSettings({
-    //         streaming: {
-    //             abr: {
-    //                 useDefaultABRRules: true,
-    //                 additionalAbrRules: {
-    //                     insufficientBufferRule: true,
-    //                     switchHistoryRule: false,
-    //                     droppedFramesRule: false,
-    //                     abandonRequestsRule: false
-    //                 }
-    //             }
-    //         }
-    //     });
-    //     relaunchPlayer();
-    // }
-
-    // function enableDynamicABR(){
-    //     player.updateSettings({
-    //         streaming: {
-    //             abr: {
-    //                 useDefaultABRRules: true,
-    //                 ABRStrategy: 'abrDynamic',
-    //                 additionalAbrRules: {
-    //                     insufficientBufferRule: true,
-    //                     switchHistoryRule: false,
-    //                     droppedFramesRule: false,
-    //                     abandonRequestsRule: false
-    //                 }
-    //             }
-    //         }
-    //     });
-    //     relaunchPlayer();
-    // }
-
-    // function enableBOLATABR(){
-    //     player.updateSettings({
-    //         streaming: {
-    //             abr: {
-    //                 useDefaultABRRules: true,
-    //                 ABRStrategy: 'bola',
-    //                 additionalAbrRules: {
-    //                     insufficientBufferRule: true,
-    //                     switchHistoryRule: false,
-    //                     droppedFramesRule: false,
-    //                     abandonRequestsRule: false
-    //                 }
-    //             }
-    //         }
-    //     });
-    //     relaunchPlayer();
-    // }
-
-    // function enableThroughputABR(){
-    //     player.updateSettings({
-    //         streaming: {
-    //             abr: {
-    //                 useDefaultABRRules: true,
-    //                 ABRStrategy: 'throughput',
-    //                 additionalAbrRules: {
-    //                     insufficientBufferRule: true,
-    //                     switchHistoryRule: false,
-    //                     droppedFramesRule: false,
-    //                     abandonRequestsRule: false
-    //                 }
-    //             }
-    //         }
-    //     });
-    //     relaunchPlayer();
-    // }
-
-
-
-        function disableABR() {
-            player.updateSettings({'streaming': {'abr': {'useDefaultABRRules': false }}});
-            relaunchPlayer();
-        }
-
-        function enableABR() {
-            player.updateSettings({'streaming': {'abr': {'useDefaultABRRules': true }}});
-            relaunchPlayer();
-        }
-
-        function enableDynamicABR() {
-            player.updateSettings({'streaming': {'abr': {'ABRStrategy': 'abrDynamic' }}});
-            relaunchPlayer();
-        }
-
-        function enableBOLATABR() {
-            player.updateSettings({'streaming': {'abr': {'ABRStrategy': 'bola' }}});
-            relaunchPlayer();
-        }
-
-        function enableThroughputABR() {
-            player.updateSettings({'streaming': {'abr': {'ABRStrategy': 'throughput'}}});
-            relaunchPlayer();
-        }
-
-    function relaunchPlayer() {
-        player.reset();
+        
         player.initialize(document.querySelector("#videoPlayer"), url, true);
-        player.on(dashjs.MediaPlayer.events["PLAYBACK_ENDED"], function () {
-                clearInterval(eventPoller);
-                clearInterval(bitrateCalculator);
-        });
     }
+
+    function enableBOLATABR(){
+        player.updateSettings({
+            streaming: {
+                abr: {
+                    useDefaultABRRules: true,
+                    ABRStrategy: 'bola',
+                    additionalAbrRules: {
+                        insufficientBufferRule: true,
+                        switchHistoryRule: false,
+                        droppedFramesRule: false,
+                        abandonRequestsRule: false
+                    }
+                }
+            }
+        });
+        
+        player.initialize(document.querySelector("#videoPlayer"), url, true);
+    }
+
+    function enableThroughputABR(){
+        player.updateSettings({
+            streaming: {
+                abr: {
+                    useDefaultABRRules: true,
+                    ABRStrategy: 'throughput',
+                    additionalAbrRules: {
+                        insufficientBufferRule: true,
+                        switchHistoryRule: false,
+                        droppedFramesRule: false,
+                        abandonRequestsRule: false
+                    }
+                }
+            }
+        });
+        
+        player.initialize(document.querySelector("#videoPlayer"), url, true);
+    }
+
+
+
+        // function disableABR() {
+        //     player.updateSettings({streaming: {abr: {useDefaultABRRules: false }}});
+        //     relaunchPlayer();
+        // }
+
+        // function enableABR() {
+        //     player.updateSettings({streaming: {'abr': {'useDefaultABRRules': true }}});
+        //     relaunchPlayer();
+        // }
+
+        // function enableDynamicABR() {
+        //     player.updateSettings({streaming: {'abr': {'ABRStrategy': 'abrDynamic' }}});
+        //     relaunchPlayer();
+        // }
+
+        // function enableBOLATABR() {
+        //     player.updateSettings({streaming: {abr: {ABRStrategy: 'bola' }}});
+        //     relaunchPlayer();
+        // }
+
+        // function enableThroughputABR() {
+        //     player.updateSettings({streaming: {'abr': {'ABRStrategy': 'throughput'}}});
+        //     relaunchPlayer();
+        // }
+
+    // function relaunchPlayer() {
+    //     player.reset();
+    //     player.initialize(document.querySelector("#videoPlayer"), url, true);
+    //     player.on(dashjs.MediaPlayer.events["PLAYBACK_ENDED"], function () {
+    //             clearInterval(eventPoller);
+    //             clearInterval(bitrateCalculator);
+    //     });
+    // }
 
 
 var eventPoller = setInterval(function () {
