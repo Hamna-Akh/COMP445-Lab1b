@@ -37,7 +37,16 @@
       <div id="staple">
         <strong>Bitrate:</strong>
         <span id="bitrate">0</span> kbps
-    </div>
+      </div>      
+      <div id="staple">
+        <strong>Download Time:</strong>
+        <span id="downloadTime">0</span> kbps
+      </div>
+
+      <div id="staple">
+        <strong>Size:</strong>
+        <span id="size">0</span> kbps
+      </div>
     </div>
 <!--End of HTML-->
 
@@ -46,7 +55,7 @@
         //initialize 3 important variables to play the video.
          var video = document.querySelector('video');
          var player = dashjs.MediaPlayer().create();
-         var url = "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd";
+         var url = "https://nustreaming.github.io/streaming/bbb.mpd";
 
         //initialize 3 important variables for keeping track of metadata.
         var bufferLevelElement = document.getElementById('bufferLevel');
@@ -95,13 +104,35 @@
         setInterval(function() {
         var bufferLevel = player.getBufferLength('video');
         bufferLevelElement.innerHTML = bufferLevel.toFixed(2);
+        console.log(bufferLevel);
 
         var throughput = player.getAverageThroughput('video');
         throughputElement.innerHTML = (throughput / 1000).toFixed(2);
+        console.log(throughput);
 
         var bitrate = player.getQualityFor('video');
-        bitrateElement.innerHTML = (bitrate).toFixed(2);
-      }, 100);
+        bitrateElement.innerHTML = (bitrate).toFixed(5);
+        console.log(bitrate);
+       
+       
+        // var downloadTime = player.getDashMetrics().getCurrentHttpRequest('video', true).tresponse.getTime() - player.getDashMetrics().getCurrentHttpRequest('video', true).trequest.getTime();
+        // downloadTimeElement.innerHTML = downloadTime.toFixed(2);
+        // console.log(downloadTime);
+
+        // var size = player.getDashMetrics().getCurrentHttpRequest('video', true).responsePayloadSize * 8 / downloadTime / 1000;
+        // sizeElement.innerHTML = size.toFixed(2);
+        // console.log(size);
+
+        // var dashMetrics = player.getDashMetrics();
+        // var videoRequest = dashMetrics.getHttpRequests('video')[0];
+        // if (videoRequest) {
+        //   var downloadTime = videoRequest._tfinish.getTime() - videoRequest.tresponse.getTime();
+        //   var size = videoRequest._size;
+        //   downloadTimeElement.innerHTML = downloadTime.toFixed(2);
+        //   sizeElement.innerHTML = (size / 1000).toFixed(2);
+        // }
+
+      }, 8000);
     </script>
 <!--End of JS-->
 
