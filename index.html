@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>    
+        <title>DASH Player</title>
+        <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>  
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--adds video element-->
+        <video id="videoPlayer" controls></video>
+        <!--adds button elements-->
+        <div id="buttons">
+            <button onclick="disableABR()">Low Quality</button>            
+            <button onclick="enableABR()">High Quality</button>
+            <button onclick="enableDynamicABR()">Enable Dynamic ABR</button>
+            <button onclick="enableBOLATABR()">Enable BOLA ABR</button>
+            <button onclick="enableThroughputABR()">Enable Throughput ABR</button>
+        </div>
+
+        <div>
+            <p id="bufferLevel"></p>
+            <p id="reportedBitrate"></p>
+            <p id="throughput"></p>
+            <p id="segmentTime"></p>
+            <p id="segmentSize"></p>
+          </div>
+
+        <script src="app.js"></script>
+        <script>
+            function disableABR() {
+                player.updateSettings({'streaming': {'abr': {'useDefaultABRRules': false }}});
+                relaunchPlayer();
+            }
+
+            function enableABR() {
+                player.updateSettings({'streaming': {'abr': {'useDefaultABRRules': true }}});
+                relaunchPlayer();
+            }
+
+            function enableDynamicABR() {
+                player.updateSettings({'streaming': {'abr': {'ABRStrategy': 'abrDynamic' }}});
+                relaunchPlayer();
+            }
+
+            function enableBOLATABR() {
+                player.updateSettings({'streaming': {'abr': {'ABRStrategy': 'bola' }}});
+                relaunchPlayer();
+            }
+
+            function enableThroughputABR() {
+                player.updateSettings({'streaming': {'abr': {'ABRStrategy': 'throughput'}}});
+                relaunchPlayer();
+            }
+
+            function relaunchPlayer() {
+                player.reset();
+                player.initialize(document.querySelector("#videoPlayer"), "https://nustreaming.github.io/streaming/bbb.mpd", true);
+            }
+
+        </script>
+
+    </body>
+
+</html>
