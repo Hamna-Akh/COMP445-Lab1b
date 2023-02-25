@@ -7,21 +7,6 @@ player.on(dashjs.MediaPlayer.events["PLAYBACK_ENDED"], function () {
   clearInterval(bitrateCalculator);
 });
 
-        // player.updateSettings({
-        //     streaming: {
-        //         abr: {
-        //             useDefaultABRRules: true,
-        //             ABRStrategy: 'abrDynamic',
-        //             additionalAbrRules: {
-        //                 insufficientBufferRule: true,
-        //                 switchHistoryRule: false,
-        //                 droppedFramesRule: false,
-        //                 abandonRequestsRule: false
-        //             }
-        //         }
-        //     }
-        // });
-
     function enableDynamicABR(){
         player.updateSettings({
             streaming: {
@@ -79,43 +64,6 @@ player.on(dashjs.MediaPlayer.events["PLAYBACK_ENDED"], function () {
         player.initialize(document.querySelector("#videoPlayer"), url, true);
     }
 
-
-
-        // function disableABR() {
-        //     player.updateSettings({streaming: {abr: {useDefaultABRRules: false }}});
-        //     relaunchPlayer();
-        // }
-
-        // function enableABR() {
-        //     player.updateSettings({streaming: {'abr': {'useDefaultABRRules': true }}});
-        //     relaunchPlayer();
-        // }
-
-        // function enableDynamicABR() {
-        //     player.updateSettings({streaming: {'abr': {'ABRStrategy': 'abrDynamic' }}});
-        //     relaunchPlayer();
-        // }
-
-        // function enableBOLATABR() {
-        //     player.updateSettings({streaming: {abr: {ABRStrategy: 'bola' }}});
-        //     relaunchPlayer();
-        // }
-
-        // function enableThroughputABR() {
-        //     player.updateSettings({streaming: {'abr': {'ABRStrategy': 'throughput'}}});
-        //     relaunchPlayer();
-        // }
-
-    // function relaunchPlayer() {
-    //     player.reset();
-    //     player.initialize(document.querySelector("#videoPlayer"), url, true);
-    //     player.on(dashjs.MediaPlayer.events["PLAYBACK_ENDED"], function () {
-    //             clearInterval(eventPoller);
-    //             clearInterval(bitrateCalculator);
-    //     });
-    // }
-
-
 var eventPoller = setInterval(function () {
   var streamInfo = player.getActiveStream().getStreamInfo();
   var dashMetrics = player.getDashMetrics();
@@ -143,15 +91,15 @@ var eventPoller = setInterval(function () {
       var frameRate = currentRep.frameRate;
       var resolution = currentRep.width + 'x' + currentRep.height;
       document.getElementById('bufferLevel').innerText = "Buffer level: " + bufferLevel + " seconds";
-      document.getElementById('reportedBitrate').innerText = "Bitrate: " + (bitrate/1000).toFixed(2) + " Mbps";
-      document.getElementById('throughput').innerText = "Throughput: " + (throughput/1000000).toFixed(2) + " Mbps";
+      document.getElementById('reportedBitrate').innerText = "Bitrate: " + (bitrate/1000000).toFixed(2) + " Mbps";
+      document.getElementById('throughput').innerText = "Throughput: " + (throughput/1000000).toFixed(5) + " Mbps";
       document.getElementById('segmentTime').innerText = "Segment Time: " + (segmentDownloadTime).toFixed(2) + " seconds";
       document.getElementById('segmentSize').innerText = "Segment Size: " + (segmentSize).toFixed(2) + " Bytes";
 
       console.log("ABR strategy: " + player.getSettings().streaming.abr.ABRStrategy);
       console.log("buffer level: " + bufferLevel + " seconds")
-      console.log("bitrate: " + (bitrate/1000).toFixed(2) + " Mbps")
-      console.log("throughput: " + (throughput/1000000).toFixed(2) + " Mbps")
+      console.log("bitrate: " + (bitrate/1000000).toFixed(2) + " Mbps")
+      console.log("throughput: " + (throughput/1000000).toFixed(5) + " Mbps")
       console.log("Segment Time: " + (segmentDownloadTime).toFixed(2) + " seconds")
       console.log("Segment Size: " + (segmentSize).toFixed(2) + " Bytes")
       console.log(" ")
