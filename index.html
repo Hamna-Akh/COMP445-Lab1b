@@ -9,6 +9,10 @@
     </head>
 
     <body>
+        <div id="title">
+            <span style = "text-decoration: underline; font-weight: bold; font-size: x-large;">Concordia DASH.js simulation</span>
+            <span>by Antonio Reda and Hamna Akhter</span>
+        </div>
         <!--adds video element-->
         <video id="videoPlayer" controls></video>
         <!--adds button elements-->
@@ -20,16 +24,16 @@
             <button onclick="enableThroughputABR()">Enable Throughput ABR</button>
         </div>
 
-        <div>
+        <div id="data">
             <p id="bufferLevel"></p>
             <p id="reportedBitrate"></p>
             <p id="throughput"></p>
             <p id="segmentTime"></p>
             <p id="segmentSize"></p>
-          </div>
+        </div>
 
         <script src="app.js"></script>
-        <script>
+        <!-- <script>
             function disableABR() {
                 player.updateSettings({'streaming': {'abr': {'useDefaultABRRules': false }}});
                 relaunchPlayer();
@@ -57,10 +61,10 @@
 
             function relaunchPlayer() {
                 player.reset();
-                player.initialize(document.querySelector("#videoPlayer"), "https://nustreaming.github.io/streaming/bbb.mpd", true);
+                player.initialize(document.querySelector("#videoPlayer"), "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd", true);
             }
 
-        </script>
+        </script> -->
 
     </body>
 
