@@ -22,43 +22,6 @@ player.on(dashjs.MediaPlayer.events["PLAYBACK_ENDED"], function () {
         //     }
         // });
 
-
-    function disableABR(){
-        player.updateSettings({
-            streaming: {
-                abr: {
-                    useDefaultABRRules: false,
-                    additionalAbrRules: {
-                        insufficientBufferRule: true,
-                        switchHistoryRule: false,
-                        droppedFramesRule: false,
-                        abandonRequestsRule: false
-                    }
-                }
-            }
-        });
-        
-        player.initialize(document.querySelector("#videoPlayer"), url, true);
-    }
-
-    function enableABR(){
-        player.updateSettings({
-            streaming: {
-                abr: {
-                    useDefaultABRRules: true,
-                    additionalAbrRules: {
-                        insufficientBufferRule: true,
-                        switchHistoryRule: false,
-                        droppedFramesRule: false,
-                        abandonRequestsRule: false
-                    }
-                }
-            }
-        });
-        
-        player.initialize(document.querySelector("#videoPlayer"), url, true);
-    }
-
     function enableDynamicABR(){
         player.updateSettings({
             streaming: {
