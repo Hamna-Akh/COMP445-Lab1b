@@ -1,0 +1,42 @@
+<!--Authors: @Hamna Akther and @Antonio Reda
+//  Purpose: Create a DASH.js video player while allowing the switch of different types of ABR as well as recording and displaying the metrics.-->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>    
+        <title>DASH Player</title>
+        <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>  
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <script src="app.js"></script>
+        <div id="title">
+            <span style = "text-decoration: underline; font-weight: bold; font-size: x-large;">Concordia DASH.js simulation</span>
+            <span style = "font-size: medium;">by Antonio Reda and Hamna Akhter</span>
+        </div>
+        <!--adds video element-->
+        <span id = "container">
+            <div id="data">
+                <p id="bufferLevel" ></p>
+                <p id="reportedBitrate"></p>
+                <p id="throughput"></p>
+                <p id="segmentTime"></p>
+                <p id="segmentSize"></p>
+            </div>
+            <video id="videoPlayer" controls></video>
+        </span>
+        <!--adds button elements-->
+        <div id="buttons">
+            <button onclick="enableDynamicABR()">Enable Dynamic ABR</button>
+            <button onclick="enableBOLAABR()">Enable BOLA ABR</button>
+            <button onclick="enableThroughputABR()">Enable Throughput ABR</button>
+        </div>
+
+        
+
+    </body>
+
+</html>
