@@ -1,0 +1,574 @@
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.21 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.24343 Mbps
+app.js:115 Segment Time: 25.000 Seconds
+app.js:116 Segment Size: 760727.34 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.244 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.24343 Mbps
+app.js:115 Segment Time: 25.000 Seconds
+app.js:116 Segment Size: 760727.34 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.186 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.24343 Mbps
+app.js:115 Segment Time: 49.000 Seconds
+app.js:116 Segment Size: 1491025.59 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.21 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.21874 Mbps
+app.js:115 Segment Time: 60.000 Seconds
+app.js:116 Segment Size: 1640526.00 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.237 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.21874 Mbps
+app.js:115 Segment Time: 27.000 Seconds
+app.js:116 Segment Size: 738236.70 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.344 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.19074 Mbps
+app.js:115 Segment Time: 58.000 Seconds
+app.js:116 Segment Size: 1382878.29 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.092 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.17537 Mbps
+app.js:115 Segment Time: 55.000 Seconds
+app.js:116 Segment Size: 1205693.30 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.147 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.15559 Mbps
+app.js:115 Segment Time: 65.000 Seconds
+app.js:116 Segment Size: 1264191.96 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.125 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.13655 Mbps
+app.js:115 Segment Time: 70.000 Seconds
+app.js:116 Segment Size: 1194851.25 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.128 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.13655 Mbps
+app.js:115 Segment Time: 62.000 Seconds
+app.js:116 Segment Size: 1058296.82 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.133 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12837 Mbps
+app.js:115 Segment Time: 50.000 Seconds
+app.js:116 Segment Size: 802288.28 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.125 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12595 Mbps
+app.js:115 Segment Time: 66.000 Seconds
+app.js:116 Segment Size: 1039111.33 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.188 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12040 Mbps
+app.js:115 Segment Time: 65.000 Seconds
+app.js:116 Segment Size: 978267.06 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.251 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.08950 Mbps
+app.js:115 Segment Time: 70.000 Seconds
+app.js:116 Segment Size: 783116.25 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.276 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.08950 Mbps
+app.js:115 Segment Time: 35.000 Seconds
+app.js:116 Segment Size: 391558.13 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.259 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.08950 Mbps
+app.js:115 Segment Time: 37.000 Seconds
+app.js:116 Segment Size: 413932.88 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.024 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.10860 Mbps
+app.js:115 Segment Time: 35.000 Seconds
+app.js:116 Segment Size: 475116.80 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.133 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.10754 Mbps
+app.js:115 Segment Time: 70.000 Seconds
+app.js:116 Segment Size: 940956.53 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.074 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.10911 Mbps
+app.js:115 Segment Time: 71.000 Seconds
+app.js:116 Segment Size: 968331.53 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.088 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11606 Mbps
+app.js:115 Segment Time: 79.000 Seconds
+app.js:116 Segment Size: 1146100.73 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.212 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11042 Mbps
+app.js:115 Segment Time: 72.000 Seconds
+app.js:116 Segment Size: 993807.00 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.116 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.10167 Mbps
+app.js:115 Segment Time: 30.000 Seconds
+app.js:116 Segment Size: 381256.41 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.257 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.09931 Mbps
+app.js:115 Segment Time: 72.000 Seconds
+app.js:116 Segment Size: 893822.00 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.308 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.08426 Mbps
+app.js:115 Segment Time: 59.000 Seconds
+app.js:116 Segment Size: 621405.91 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.226 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.08127 Mbps
+app.js:115 Segment Time: 58.000 Seconds
+app.js:116 Segment Size: 589178.50 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.357 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.08391 Mbps
+app.js:115 Segment Time: 81.000 Seconds
+app.js:116 Segment Size: 849615.75 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.121 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.08391 Mbps
+app.js:115 Segment Time: 25.000 Seconds
+app.js:116 Segment Size: 262227.08 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.029 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.08703 Mbps
+app.js:115 Segment Time: 82.000 Seconds
+app.js:116 Segment Size: 892087.11 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.058 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.08761 Mbps
+app.js:115 Segment Time: 60.000 Seconds
+app.js:116 Segment Size: 657112.50 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.158 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.08543 Mbps
+app.js:115 Segment Time: 78.000 Seconds
+app.js:116 Segment Size: 832898.18 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.126 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.08643 Mbps
+app.js:115 Segment Time: 96.000 Seconds
+app.js:116 Segment Size: 1037160.00 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.075 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.09357 Mbps
+app.js:115 Segment Time: 60.000 Seconds
+app.js:116 Segment Size: 701745.58 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.294 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.09447 Mbps
+app.js:115 Segment Time: 95.000 Seconds
+app.js:116 Segment Size: 1121798.17 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.315 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.09971 Mbps
+app.js:115 Segment Time: 78.000 Seconds
+app.js:116 Segment Size: 972215.93 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.353 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.10825 Mbps
+app.js:115 Segment Time: 75.000 Seconds
+app.js:116 Segment Size: 1014873.96 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.324 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.10003 Mbps
+app.js:115 Segment Time: 62.000 Seconds
+app.js:116 Segment Size: 775203.44 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.156 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11960 Mbps
+app.js:115 Segment Time: 36.000 Seconds
+app.js:116 Segment Size: 538187.40 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.041 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11946 Mbps
+app.js:115 Segment Time: 54.000 Seconds
+app.js:116 Segment Size: 806325.75 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 61.421 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11946 Mbps
+app.js:115 Segment Time: 54.000 Seconds
+app.js:116 Segment Size: 806325.75 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 61.421 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11946 Mbps
+app.js:115 Segment Time: 54.000 Seconds
+app.js:116 Segment Size: 806325.75 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.448 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12116 Mbps
+app.js:115 Segment Time: 65.000 Seconds
+app.js:116 Segment Size: 984415.52 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.516 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.13797 Mbps
+app.js:115 Segment Time: 30.000 Seconds
+app.js:116 Segment Size: 517401.43 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.505 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.13216 Mbps
+app.js:115 Segment Time: 65.000 Seconds
+app.js:116 Segment Size: 1073809.14 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.476 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12483 Mbps
+app.js:115 Segment Time: 71.000 Seconds
+app.js:116 Segment Size: 1107829.76 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.486 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12151 Mbps
+app.js:115 Segment Time: 57.000 Seconds
+app.js:116 Segment Size: 865724.55 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.558 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11686 Mbps
+app.js:115 Segment Time: 65.000 Seconds
+app.js:116 Segment Size: 949511.14 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.614 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12195 Mbps
+app.js:115 Segment Time: 31.000 Seconds
+app.js:116 Segment Size: 472553.99 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.559 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12003 Mbps
+app.js:115 Segment Time: 75.000 Seconds
+app.js:116 Segment Size: 1125256.73 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.64 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12253 Mbps
+app.js:115 Segment Time: 76.000 Seconds
+app.js:116 Segment Size: 1164013.81 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.566 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11932 Mbps
+app.js:115 Segment Time: 55.000 Seconds
+app.js:116 Segment Size: 820358.13 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.402 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11046 Mbps
+app.js:115 Segment Time: 58.000 Seconds
+app.js:116 Segment Size: 800836.81 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.436 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12174 Mbps
+app.js:115 Segment Time: 33.000 Seconds
+app.js:116 Segment Size: 502191.52 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.498 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11609 Mbps
+app.js:115 Segment Time: 68.000 Seconds
+app.js:116 Segment Size: 986745.17 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.443 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11765 Mbps
+app.js:115 Segment Time: 68.000 Seconds
+app.js:116 Segment Size: 1000061.43 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.47 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11421 Mbps
+app.js:115 Segment Time: 51.000 Seconds
+app.js:116 Segment Size: 728073.61 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.459 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.10655 Mbps
+app.js:115 Segment Time: 88.000 Seconds
+app.js:116 Segment Size: 1172090.33 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.595 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.10272 Mbps
+app.js:115 Segment Time: 50.000 Seconds
+app.js:116 Segment Size: 641981.25 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.595 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.09748 Mbps
+app.js:115 Segment Time: 73.000 Seconds
+app.js:116 Segment Size: 889536.52 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.558 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.09851 Mbps
+app.js:115 Segment Time: 76.000 Seconds
+app.js:116 Segment Size: 935873.50 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.563 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.09506 Mbps
+app.js:115 Segment Time: 102.000 Seconds
+app.js:116 Segment Size: 1211952.23 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.331 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.09182 Mbps
+app.js:115 Segment Time: 83.000 Seconds
+app.js:116 Segment Size: 952656.44 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.367 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.09951 Mbps
+app.js:115 Segment Time: 20.000 Seconds
+app.js:116 Segment Size: 248771.61 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.391 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.10225 Mbps
+app.js:115 Segment Time: 80.000 Seconds
+app.js:116 Segment Size: 1022465.33 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.435 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.10369 Mbps
+app.js:115 Segment Time: 66.000 Seconds
+app.js:116 Segment Size: 855444.70 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.492 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12437 Mbps
+app.js:115 Segment Time: 87.000 Seconds
+app.js:116 Segment Size: 1352483.88 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.597 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.14262 Mbps
+app.js:115 Segment Time: 91.000 Seconds
+app.js:116 Segment Size: 1622313.88 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.614 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.14262 Mbps
+app.js:115 Segment Time: 32.000 Seconds
+app.js:116 Segment Size: 570484.00 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.533 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.13556 Mbps
+app.js:115 Segment Time: 63.000 Seconds
+app.js:116 Segment Size: 1067552.72 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.562 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.13867 Mbps
+app.js:115 Segment Time: 114.000 Seconds
+app.js:116 Segment Size: 1976058.90 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.338 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.13575 Mbps
+app.js:115 Segment Time: 81.000 Seconds
+app.js:116 Segment Size: 1374452.55 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.395 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12935 Mbps
+app.js:115 Segment Time: 75.000 Seconds
+app.js:116 Segment Size: 1212626.25 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.445 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.12935 Mbps
+app.js:115 Segment Time: 38.000 Seconds
+app.js:116 Segment Size: 614397.30 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.496 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11711 Mbps
+app.js:115 Segment Time: 66.000 Seconds
+app.js:116 Segment Size: 966141.00 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 62.434 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11129 Mbps
+app.js:115 Segment Time: 69.000 Seconds
+app.js:116 Segment Size: 959883.64 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 56.934 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11129 Mbps
+app.js:115 Segment Time: 79.000 Seconds
+app.js:116 Segment Size: 1098997.21 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 48.936 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11129 Mbps
+app.js:115 Segment Time: 79.000 Seconds
+app.js:116 Segment Size: 1098997.21 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 40.981 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11129 Mbps
+app.js:115 Segment Time: 79.000 Seconds
+app.js:116 Segment Size: 1098997.21 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 33.011 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11129 Mbps
+app.js:115 Segment Time: 79.000 Seconds
+app.js:116 Segment Size: 1098997.21 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 25.036 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11129 Mbps
+app.js:115 Segment Time: 79.000 Seconds
+app.js:116 Segment Size: 1098997.21 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 16.8 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11129 Mbps
+app.js:115 Segment Time: 79.000 Seconds
+app.js:116 Segment Size: 1098997.21 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 8.833 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11129 Mbps
+app.js:115 Segment Time: 79.000 Seconds
+app.js:116 Segment Size: 1098997.21 Bytes
+app.js:117  
+app.js:111 ABR strategy: abrDynamic
+app.js:112 buffer level: 0.844 Seconds
+app.js:113 bitrate: 1.62774 Mbps
+app.js:114 throughput: 0.11129 Mbps
+app.js:115 Segment Time: 79.000 Seconds
+app.js:116 Segment Size: 1098997.21 Bytes
+app.js:117 

@@ -5,7 +5,7 @@
 //Creates a DASH.js video player.
 let player = dashjs.MediaPlayer().create();
 //provides an mpd for the video player.
-var url = "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd";
+var url = "https://nustreaming.github.io/streaming/bbb.mpd";
 //initializes the video player and clears out unwanted noise from the metrics.
 player.initialize(document.querySelector("#videoPlayer"), url, true);
 player.on(dashjs.MediaPlayer.events["PLAYBACK_ENDED"], function () {
