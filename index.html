@@ -15,10 +15,19 @@
         <script src="app.js"></script>
         <div id="title">
             <span style = "text-decoration: underline; font-weight: bold; font-size: x-large;">Concordia DASH.js simulation</span>
-            <span>by Antonio Reda and Hamna Akhter</span>
+            <span style = "font-size: medium;">by Antonio Reda and Hamna Akhter</span>
         </div>
         <!--adds video element-->
-        <video id="videoPlayer" controls></video>
+        <span id = "container">
+            <div id="data">
+                <p id="bufferLevel" ></p>
+                <p id="reportedBitrate"></p>
+                <p id="throughput"></p>
+                <p id="segmentTime"></p>
+                <p id="segmentSize"></p>
+            </div>
+            <video id="videoPlayer" controls></video>
+        </span>
         <!--adds button elements-->
         <div id="buttons">
             <button onclick="enableDynamicABR()">Enable Dynamic ABR</button>
@@ -26,13 +35,7 @@
             <button onclick="enableThroughputABR()">Enable Throughput ABR</button>
         </div>
 
-        <div id="data">
-            <p id="bufferLevel"></p>
-            <p id="reportedBitrate"></p>
-            <p id="throughput"></p>
-            <p id="segmentTime"></p>
-            <p id="segmentSize"></p>
-        </div>
+        
 
     </body>
 

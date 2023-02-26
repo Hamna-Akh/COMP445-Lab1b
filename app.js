@@ -104,7 +104,7 @@ var eventPoller = setInterval(function () {
       document.getElementById('bufferLevel').innerText = "Buffer level: " + bufferLevel + " Seconds";
       document.getElementById('reportedBitrate').innerText = "Bitrate: " + (bitrate/1000000).toFixed(5) + " Mbps";
       document.getElementById('throughput').innerText = "Throughput: " + (throughput/1000000).toFixed(5) + " Mbps";
-      document.getElementById('segmentTime').innerText = "Segment Time: " + (segmentDownloadTime).toFixed(5) + " Seconds";
+      document.getElementById('segmentTime').innerText = "Segment Time: " + (segmentDownloadTime).toFixed(3) + " Seconds";
       document.getElementById('segmentSize').innerText = "Segment Size: " + (segmentSize).toFixed(5) + " Bytes";
 
       //Displays the metrics in the console.
@@ -112,8 +112,8 @@ var eventPoller = setInterval(function () {
       console.log("buffer level: " + bufferLevel + " Seconds")
       console.log("bitrate: " + (bitrate/1000000).toFixed(5) + " Mbps")
       console.log("throughput: " + (throughput/1000000).toFixed(5) + " Mbps")
-      console.log("Segment Time: " + (segmentDownloadTime).toFixed(5) + " Seconds")
+      console.log("Segment Time: " + (segmentDownloadTime).toFixed(3) + " Seconds")
       console.log("Segment Size: " + (segmentSize).toFixed(2) + " Bytes")
       console.log(" ")
   }
-} , 8000);
+} , 1000);
