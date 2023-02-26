@@ -116,4 +116,4 @@ var eventPoller = setInterval(function () {
       console.log("Segment Size: " + (segmentSize).toFixed(2) + " Bytes")
       console.log(" ")
   }
-} , 1000);
+} , 8000);
